@@ -24,17 +24,17 @@
     <br>
     <br>
     <label for="date">Date:</label>
-    <input type="text" name="date_input" id="date" pattern="\d{4}-\d{2}-\d{2}" title="Date format must be YYYY-MM-DD" >
+    <input type="text" required name="date_input" id="date" pattern="\d{4}-\d{2}-\d{2}" title="Date format must be YYYY-MM-DD" >
     <br>
     <br>
     <label for="code">Country Code</label>
-    <input type="text" title="Enter 3 Character Country code" pattern="[a-zA-Z]{3,}" id="code"><br><br>
+    <input type="text" required title="Enter 3 Character Country code" pattern="[a-zA-Z]{3,}" id="code"><br><br>
     <label for="phn_input">Phone Number:</label>
-    <input type="tel" title="Enter phone number starting from 6 to 9 " id="phn_input" pattern="[6-9]/d{9}"><br><br>
+    <input type="tel"required  title="Enter phone number starting from 6 to 9 " id="phn_input" pattern="[6-9]/d{9}"><br><br>
     <label for="url_Val">Website Link</label>
-    <input type="url" id="url_Val" pattern="https?://.+"><br><br>
+    <input type="url" required id="url_Val" pattern="https?://.+"><br><br>
     <label for="username_val">Username:</label>
-    <input type="text" id="username_val" pattern="[a-zA-Z]{3,10}"><br><br>
+    <input type="text" required id="username_val" pattern="[a-zA-Z]{3,10}"><br><br>
     <input type="submit">
     </form>
 </body>
