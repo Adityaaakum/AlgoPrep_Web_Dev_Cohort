@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <style>
+        /* Till now we saw validation or error message displayed only when we click on submit
+         but with psuedo selector we can bring cues in run time as well to improve functionality 
+         even with this validation message will be provided by HTML only after submitting*/
+         
+        
+        input:invalid{
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Registration Form</h2> <br>   
+    <label for="Email">Credit Card Number:</label>
+    <input type="number" name="Email" id="Email" placeholder="" pattern="\d{16}" title="Input 16 digit Credit Number" min="16" max="16" required>
+    <!-- Here with number type we cannot ovveride custom pattern it seems -->
+    <br>
+    <br>
+    <label for="date">Date:</label>
+    <input type="text" name="date_input" id="date" pattern="\d{4}-\d{2}-\d{2}" title="Date format must be YYYY-MM-DD" >
+    <br>
+    <br>
+    <label for="code">Country Code</label>
+    <input type="text" title="Enter 3 Character Country code" pattern="[a-zA-Z]{3,}" id="code"><br><br>
+    <label for="phn_input">Phone Number:</label>
+    <input type="tel" title="Enter phone number starting from 6 to 9 " id="phn_input" pattern="[6-9]/d{9}"><br><br>
+    <label for="url_Val">Website Link</label>
+    <input type="url" id="url_Val" pattern="https?://.+"><br><br>
+    <label for="username_val">Username:</label>
+    <input type="text" id="username_val" pattern="[a-zA-Z]{3,10}"><br><br>
+    <input type="submit">
+    </form>
+</body>
+</html>

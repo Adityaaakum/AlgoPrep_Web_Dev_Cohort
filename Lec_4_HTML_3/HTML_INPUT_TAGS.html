@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input types</title>
+</head>
+<body>
+    <h2>HTML Input tags</h2><br>
+    <form action="">
+        
+        <label for="Slider">Slider:</label>
+        <input id="Slider" type="range" min="0" max="100" step="20" value="40"><br><br>
+        <label for="country">Country</label>
+        <select name="" id="Country">Country:
+        <option value="INDIA" >INDIA</option>
+        <option value="US" selected>USA</option>
+        <option value="UK">UK</option></select>
+         <br><br>
+         <fieldset>
+            <legend>Idenity</legend>
+            <input type="radio" id="gender" name="gender" value="MALE" checked>
+            <label for="gender">MALE</label>
+            <input type="radio" name="gender" id="gender_1" value="FEMALE">
+            <label for="gender_1">FEMALE</label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Checkbox</legend>
+            <label for="Degrees">Degrees:</label>            
+            <label for="ChcK_BE">BE</label>
+            <input type="checkbox" id="ChcK_BE" value="BE"checked>
+            <label for="ChcK_MT">MTECH</label>
+            <input type="checkbox" id="ChcK_MT" value="MTECH">
+         </fieldset>
+         <br>
+         <input type="reset"><!-- Brings all field values to default -->
+       
+    </form>
+</body>
+</html>
